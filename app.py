@@ -196,8 +196,8 @@ with col_b_2:
 col1, col2 = st.columns(2)
 
 with col2:
+    st.header("Data")
     if st.session_state.df.shape[0] != 0:
-        st.header("Data")
         st.dataframe(st.session_state.df)
 
 with col1:
